@@ -5,7 +5,6 @@ coursework for some university-level math and computing
 
 
 * COMPSCI 1DM3: Discrete Math - Summer '23
-    * Textbook: "Discrete Mathematics and Its Applications by Kenneth H. Rosen "
     * Assignment #1: Logic and Proofs, Sets, Functions, Sequence, Sums, Algorithms and Time Complexity. CH 1-3
     * Assignment #2: Number Theory, Modular Arithmetic, Mathematical Induction and Strong Induction, Recursion. CH 4-5 
     * Assignment #3: Counting Principles, Discrete Probability, Advanced Counting Techniques, Relations. CH 6-9
