@@ -1,0 +1,152 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\title{
+\LARGE COMPSCI-1DM3: Assignment \#3 CH 6-9 \\
+}
+\author{\Large Author: Qusay Qadir \\
+\large Instructor: Mahdee Jodayree \\ Student \#: 400454763 \\MacID: qadirq  \\Tut: T02 \\ }
+
+
+\date{Due Date: July 30th(23:59), 2023}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Question \#1. [30 Marks]}
+How many string of eight uppercase English Letters are there \\\\
+a) That starts with X if no letter can be repeated \\\
+You would need to use the product rule, where the first letter must be an X. This would be expressed as: \\\\
+1 $\cdot$ 25 $\cdot$ 24 $\cdot$ 23 $\cdot$ 22 $\cdot$ 21 $\cdot$ 20 $\cdot$ 19 = 2,422,728,000 \\\\
+b) That start and end with X, if the letter can be repeated.  \\\\
+Since you need to create a string of 8 but this time only the middle 6 can not be X's this would mean that there are \\\\
+$26^6$ strings. \\\\
+c) Start with letters BO(in that order) if the letters can be repeated? \\\\
+There are only 6 letters that can be switched around thus the answer to this is also $26^6$ due to the product rule.
+\newpage
+\section{Question \#2. [20 Marks]}
+How many bit strings of length 12 contain \\ \\
+a) At least three 1s? \\\\
+At least 3 means that it can also contain 3-12 ones, to solve this we will consider the scenarios where it contradicts this condition and subtract it from \\ $2^{(12)}$  = 4096.
+ \\The condition would be violated if there is 2 1's, 1 1's or 0 1's. 
+ Thus: \\$2^{(12)} -  (_{0}^{12}) -  (_{1}^{12}) -  (_{2}^{12})$ = 4017 \\\\
+ b) An equal number of 0s and 1s? \\\\
+ In the following assignment whenever C(n,k) is mentioned assume: 
+ \equation{}
+ \frac{n!}{k! \cdot (n-k)!}
+ \equation{}
+ C(12,6) = 924
+
+\newpage
+
+\section{Question \#3. [20 Marks]}
+A coin is flipped eight times and each flip comes up either heads or tails. How many possible outcomes? \\\\
+a) Contain at least 3 heads? \\ \\ 
+Containing at least three heads, like Q2 a), this means there can be 3-8 heads \\ \\
+$2^{(8)} -  (_{0}^{8}) -  (_{1}^{8}) -  (_{2}^{8})$ = 219 possible outcomes \\\\
+b) Contain the same number of heads and tails? \\\\
+That must mean from 8 elements we have to choose from there must be 4 elements that are heads and 4 that are tails: Thus \\ \\
+C(8,4) = 70 possible outcomes
+\newpage
+
+\section{Question \#4. [10 Marks]}
+Find the probability of winning a lottery by selecting the correct six integers, where the order in which these integers are selected does not matter, from the positive integers not exceeding \\ \\
+We will use the following equations: \\
+P(E) = $\frac{E}{S}$\\\\
+a) 42 \\\\
+Probability is: $\frac{1}{C(42,6)}$ = 1 / 5245786  \\\\
+b) 48 \\\\ 
+Probability is: $\frac{1}{C(48,6)}$ = 1 / 12271512
+\newpage
+
+
+\section{Question \#5. [20 Marks]}
+What is the probability of these events when we randomly select a permutation of \{ 1,2, ..., n\} where n $\geq$ 4?\\\\
+a) 1 immediately precedes 2 \\\\
+The probability is 1/2 this is because 1 must precede 2 or follow it, since only one of two events can happen thus the probability of 1 immediately preceding 2 is 1/2.  \\\\
+b) n precedes 1 and n-1 precedes 2 \\\\
+If we assume a simple case of n = 4 then we can assume that half of the permutations are n preceding 1 and n-1 of them preceding 2. Thus probability is 1/4 since a total of 4 different events can happen that all have an equal chance of occurring. \\\\
+c) n precedes 1 and n precedes 2 \\\\
+n can either precedes just 1 or just 2 or both thus of the three possible events the probability that 1 and 2 are both preceded by n is 1/3.
+
+\newpage
+
+\section{Question \#6. [20 Marks]}
+Suppose that 4\% of the patients tested in a clinic are infected with avian influenza. Furthermore, suppose that when a blood test for avian influenza is given, 97\% of the patients infected with avian influenza test positive and that 2\% of the patients not infected with avian influenza test positive. What is the probability that \\\\
+a) a patient testing positive for avian influenza with this test is infected with it? \\\\
+Let p(A) = 0.04 and let p($\overline{\mbox{A}}$) = 0.96.
+Let  p($\overline{\mbox{P}}$ $|$ A) = 0.03 and let p($\overline{\mbox{P}}$ $|$ $\overline{\mbox{A}}$) = 0.98 \\\\
+Use the formula:\\\\ p(A $| $ P) = $\frac{p(P|A)p(A)}{p(P | A)p(A)+ p(P | \overline{\mbox{A}})p(\overline{\mbox{A}})}$ \\\\\\= $\frac{(0.97)(0.04)}{(0.97)(0.04)+(0.02)(0.96)}$ = 0.67 \\\\
+b) a patient testing positive for avian influenza with this test is not infected with it? \\\\
+p($\overline{\mbox{A}}$ $|$ P) = 1 - p(A $|$ P) = 0.33
+\newpage
+
+\section{Question \#7. [30 Marks]}
+Let X and Y be the random variables that count the number of heads and the number of tails that come up when two fair coins are flipped. Show that X and Y are not independent. \\\\
+Let X be the number of heads that show up and let Y be the number of tails that show up. We know that 2 events are independent if p(X and Y ) = p(X)p(Y) and to show that they are not independent but rather dependent we need to show that p(X and Y) != p(X)p(Y) \\\\
+First: p(X=2) = 1/4 and p(Y=2) = 1/4 thus p(X)p(Y) = 1/16 \\\
+Second: p(X=2 and Y=2) = 0  \\\\
+Since p(X and Y) != p(X)p(Y) thus they are not independent. This completes the proof.
+\newpage
+
+\section{Question \#8. [20 Marks]}
+a) Find a recurrence relation for the number of ways to climb n stairs if the person climbing the stairs can take one, two, or three stairs at a time. \\\\
+Let $a_{(n)}$ be the number of ways to climb up the stairs. To express a person being able to take one stair that person can start at the first step and then climb n-1 stairs in $a_{(n-1)}$ ways, or start by taking two steps and then climb n-2 stairs in $a_{(n-1)}$ ways or start by taking three stairs and then climb n-3 stairs in $a_{(n-1)}$ ways. Thus the recurrence relation is $a_{(n)}$ =  $a_{(n-1)}$ + $a_{(n-1)}$ + $a_{(n-1)}$   \\\\
+b) What are the initial conditions? \\\\
+$a_{(0)}$ = 1 one way to climb one stair \\ 
+$a_{(1)}$ = 1 climb one step at a time twice to climb 2 steps \\ 
+$a_{(2)}$ = 2  climb two steps at one time. \\
+\newpage
+
+\section{Question \#9 [30 Marks]} 
+Find a closed form for the generating function for each of these sequences. (Assume a general form for the terms of the sequence, using the most obvious choice of such a sequence.) \\ \\ 
+a) 0, 0, 3, -3, 3, -3, 3, -3, ... \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+b) 1, 2, 1, 1, 1, 1, 1, 1, 1,... \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+c) $(_{0}^{7}), 2(_{1}^{7}), 2^2(_{2}^{7}),...,2^7(_{0}^{7}), 0, 0, 0, 0, ...$
+\newpage
+
+\section{Question \#10. [20 Marks]}
+Find the coefficient of $X^{12}$ in the power series of each of these functions.  \\\\
+The formulas used are from Table 1: Final Exam- Axioms \\\\
+C(n,k) is mentioned assume: 
+ \equation{}
+ \frac{n!}{k! \cdot (n-k)!}
+ \equation{}\\\\
+a) $\frac{1}{(1+x)^8}$ \\\\
+We will use the formula given by the axiom table: \\ 
+$(-1)^k$C(n+k-1, k) = $(-1)^{(12)}$C(19, 7) = 50,388 \\
+ \\\\
+b) $\frac{1}{(1-4x)^3}$ \\\\
+We will use the formula C(n+k-1,k)$a^k$ = C(14,2)$4^{(12)}$ = 1526726656
+\newpage
+\section{Questions \#11. [20 Marks]} 
+Use generating functions to solve the recurrence relation $a_{k} = 7a_{k-1}$ with the initial conditions $a_{0} = 5$
+\newpage
+\section{Question \#12. [30 Marks]}
+Determine whether the relation $R$ on the set of all real numbers is reflexive, symmetric, antisymmetric, and/or transitive, where (x,y) is an element of $R$ if and only if \\\\
+a) x = 2y \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+b) xy $\geq$ 0
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
