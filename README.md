@@ -9,8 +9,8 @@ coursework for some university-level math and computing
     * Assignment #2: Number Theory, Modular Arithmetic, Mathematical Induction and Strong Induction, Recursion. CH 4-5 
     * Assignment #3: Counting Principles, Discrete Probability, Advanced Counting Techniques, Relations. CH 6-9
   
-* STATS 3Y03: Probability and Statistics - Fall '23
+* STATS 3Y03: Probability and Statistics ( R labs ) - Fall '23
 
-* COMPENG 2SH4: Principles of Programming - Fall '23
+* COMPENG 2SH4: Principles of Programming ( C & C++ )  - Fall '23
 
 * COMPENG 2SI3: Data Structures and Algorithms - Winter '23 
