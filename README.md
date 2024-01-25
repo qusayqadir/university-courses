@@ -12,5 +12,7 @@ coursework for some university-level math and computing
 * STATS 3Y03: Probability and Statistics ( R labs ) - Fall '23
 
 * COMPENG 2SH4: Principles of Programming ( C & C++ )  - Fall '23
-
-* COMPENG 2SI3: Data Structures and Algorithms - Winter '23 
+  
+* COMPENG 2SI3: Data Structures and Algorithms - Winter '23
+  
+* ELECENG 2FH4: Electromagnetics I - Winter '23 
